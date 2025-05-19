@@ -46,7 +46,9 @@ function App() {
 
   return (
     <>
-      <h1>React API</h1>
+      <header>
+        <h1>React API</h1>
+      </header>
 
       <div className="container">
         <ul className='card-container'>
@@ -58,7 +60,7 @@ function App() {
           {actresses.map((element) => (
             <Cards key={`actress-${element.id}`} element={element} />
           ))}
-          
+
         </ul>
       </div>
     </>
